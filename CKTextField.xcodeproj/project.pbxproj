@@ -13,6 +13,7 @@
 		636E9AA61D19282600376DD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636E9AA51D19282600376DD4 /* Images.xcassets */; };
 		636E9AA91D19282600376DD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636E9AA71D19282600376DD4 /* LaunchScreen.xib */; };
 		636E9AB51D19282600376DD4 /* CKTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E9AB41D19282600376DD4 /* CKTextFieldTests.swift */; };
+		636E9AC51D192F9B00376DD4 /* CETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E9AC41D192F9B00376DD4 /* CETextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		636E9AAE1D19282600376DD4 /* CKTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		636E9AB31D19282600376DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636E9AB41D19282600376DD4 /* CKTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKTextFieldTests.swift; sourceTree = "<group>"; };
+		636E9AC41D192F9B00376DD4 /* CETextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				636E9A9E1D19282600376DD4 /* AppDelegate.swift */,
+				636E9AC41D192F9B00376DD4 /* CETextField.swift */,
 				636E9AA01D19282600376DD4 /* ViewController.swift */,
 				636E9AA21D19282600376DD4 /* Main.storyboard */,
 				636E9AA51D19282600376DD4 /* Images.xcassets */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636E9AA11D19282600376DD4 /* ViewController.swift in Sources */,
+				636E9AC51D192F9B00376DD4 /* CETextField.swift in Sources */,
 				636E9A9F1D19282600376DD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				636E9ABA1D19282600376DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		636E9ABB1D19282600376DD4 /* Build configuration list for PBXNativeTarget "CKTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				636E9ABD1D19282600376DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
