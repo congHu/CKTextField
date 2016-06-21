@@ -12,6 +12,8 @@ class CEKeyboard: UIView {
 
     var keys:[CEKey!] = []
     
+    var width = UIScreen.mainScreen().bounds.width
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         

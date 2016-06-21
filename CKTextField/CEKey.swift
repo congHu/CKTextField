@@ -13,6 +13,7 @@ class CEKey: UIButton {
     var action:String!
     
     
+    
     init(frame: CGRect, actionMark: String){
         super.init(frame: frame)
         action = actionMark
