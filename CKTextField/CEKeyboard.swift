@@ -18,9 +18,15 @@ class CEKeyboard: UIView {
         super.init(frame: frame)
         
         for i in 0...1{
-            keys.append(CEKey(frame: CGRectMake(8+68*CGFloat(i), 0, 60, 60), actionMark: "\(i)"))
+            keys.append(CEKey(frame: CGRectMake(8+68*CGFloat(i), 8, 60, 60), actionMark: "\(i)"))
             self.addSubview(keys[i])
         }
+        
+        keys.append(CEKey(frame: CGRectMake(width-68, 8, 60, 60), actionMark: "<x"))
+        self.addSubview(keys[2])
+        
+        keys.append(CEKey(frame: CGRectMake(width-68*2, 8, 60, 60), actionMark: "CE"))
+        self.addSubview(keys[3])
     }
     
     required init?(coder aDecoder: NSCoder) {

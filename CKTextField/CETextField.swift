@@ -41,10 +41,28 @@ class CETextField: UITextField {
         for key in keyboard.keys{
             key.addTarget(self, action: #selector(CETextField.keyAction(_:)), forControlEvents: UIControlEvents.TouchDown)
         }
+        
     }
     
     func keyAction(sender: CEKey){
-        self.text! += sender.action
+        
+        switch sender.action {
+        case "CE":
+            self.text = ""
+            break
+        case "<x":
+            if (self.text != nil) {
+                if self.text! != "" {
+                    self.text!.removeAtIndex(self.text!.endIndex.predecessor())
+                }
+            }
+            
+            break
+        default:
+            self.text! += sender.action
+            break
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
