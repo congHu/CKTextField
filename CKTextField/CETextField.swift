@@ -39,15 +39,15 @@ class CETextField: UITextField {
         self.inputView = keyboard
         
         for key in keyboard.keys{
-            key.addTarget(self, action: "keyAction:", forControlEvents: UIControlEvents.TouchDown)
+            key.addTarget(self, action: #selector(CETextField.keyAction(_:)), forControlEvents: UIControlEvents.TouchDown)
         }
     }
     
     func keyAction(sender: CEKey){
-        self.text.append(Character(sender.action))
+        self.text! += sender.action
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
